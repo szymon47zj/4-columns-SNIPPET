@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.column {
+    width: 25%;
+    height: 100vh;
+    display: inline-block;
+    float: left;
+    transition: all 0.5s linear;
+}
+
+.background {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 200%;
+}
+
+#ex1 {
+    background-image: url('https://www.kotydomowe.com/img/koty/rosyjski/kot_rosyjski_niebieski.jpg');
+}
+
+#ex2 {
+    background-image: url('https://www.koty.pl/wp-content/uploads/2017/10/shutterstock_616248851-e1508009310770.jpg');
+}
+
+#ex3 {
+    background-image: url('https://www.koty.pl/wp-content/uploads/2017/06/shutterstock_75621406.jpg');
+}
+
+#ex4 {
+    background-image: url('https://www.kotydomowe.com/img/koty/rosyjski/kot_rosyjski_niebieski.jpg');
+}
+
+.column:hover {
+    width: 40%;
+}
+
+.column:last-child {
+    position: absolute;
+    right: 0;
+}
+
+.container:hover .column:not(:hover) {
+/*    width: calc((100% - 57%) / 3);*/
+    width: 20%;
+}
